@@ -1,0 +1,192 @@
+/* Background and general styling */er
+
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  background-image: url("Employee-Management-System.png");
+  /* background-size: cover; */
+  background-position: center;
+   /* Text color white for better contrast */
+  font-family: 'Arial', sans-serif;
+}
+.back {
+  background-image: url("Employee-Management-System.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensures the div takes the full screen height */
+}
+
+
+/* Main container */
+.container {
+  background-color: rgba(210, 105, 30, 0.85); /* Semi-transparent chocolate background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  
+  text-align: center;
+  margin: 100px auto;
+  width: 700px;
+  max-width: 90%; /* Ensures responsiveness */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Header */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  background-color: rgb(236, 174, 82);
+  padding: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: left;
+}
+
+/* Input fields */
+input, select, textarea {
+  display: block;
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #ff6347; /* Focus color */
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Soft glow effect on focus */
+}
+
+/* Textarea */
+textarea {
+  max-height: 150px;
+  resize: none;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin: 20px auto;
+  border: none;
+  color: aquamarine;
+  cursor: pointer; 
+  background-color: rgb(59, 55, 59);
+  width: 50%;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: crimson;
+  transition: background-color 0.3s ease;
+}
+
+/* Table Styling */
+table {
+  width: 80%;
+  background-color: burlywood;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(236, 174, 82);
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color:#dcd8d8(193, 177, 177);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 50px;
+    padding: 20px;
+    
+  }
+
+  h1 {
+    font-size: 28px;
+    padding: 8px;
+  }
+
+  button {
+    width: 70%;
+    padding: 50px;
+    white-space: 10px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+    
+  }
+
+  input, select, textarea {
+    width: 90%;
+  }
+}
+
+/* Additional container for layout */
+/* Style the 'Add Employee' button */
+.addEmployeeBtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.addEmployeeBtn:hover {
+  background-color: #2980b9;
+}
+
+table th:last-child {
+  width: 120px; /* Adjust width of the last column to fit the button */
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+}
+
+table td button {
+  margin: 5px;
+}
+label{
+  color: #333;
+}
